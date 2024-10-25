@@ -6,6 +6,7 @@ import './App.css';
 function App() {
 
   const [token, setToken] = useState('');
+  const [playlistID, setPlaylistID] = useState('1fMkI1ZT6gBkVgW3T3s3YM')
 
   useEffect(() => {
 
@@ -21,10 +22,9 @@ function App() {
 
   return (
     <>
-      {(token === '') ? <Login /> : <WebPlayback token={token} />}
+      {(token === '') ? <Login /> : <WebPlayback token={token} playlistId={playlistID} setPlaylistId={setPlaylistID} />}
     </>
   );
 }
-
 
 export default App;
