@@ -50,7 +50,7 @@ function WebPlayback(props) {
                 if (!state) {
                     return;
                 }
-
+                console.log("player state changed", state);
                 setTrack(state.track_window.current_track);
                 setPaused(state.paused);
 

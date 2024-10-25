@@ -4,9 +4,11 @@ function Login() {
     return (
         <div className="App">
             <header className="App-header">
-                <a className="btn-spotify" href="/auth/login" >
-                    Login with Spotify 
-                </a>
+                <button onClick={() => window.location.href = "/auth/login"}>
+                    Login with Spotify
+                </button>
+                {/* <a className="btn-spotify" href="/auth/login" >
+                </a> */}
             </header>
         </div>
     );
