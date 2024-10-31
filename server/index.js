@@ -73,6 +73,11 @@ app.get('/auth/token', (req, res) => {
   res.json({ access_token: access_token })
 })
 
+app.get('/auth/logout', (req, res) => {
+  access_token = ''
+  res.redirect('/')
+})
+
 app.listen(port, () => {
   console.log(`Listening at http://localhost:${port}`)
 })
